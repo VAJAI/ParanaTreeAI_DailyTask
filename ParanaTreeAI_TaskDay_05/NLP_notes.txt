@@ -1,0 +1,56 @@
+What is NLP (Natural Language Processing)?
+Natural Language Processing (NLP) is a field of Artificial Intelligence (AI) that focuses on enabling computers to understand, interpret, and respond to human language in a meaningful way. It bridges the gap between human language (natural language) and machine language.
+
+Why is NLP Important?
+1. Human-Computer Interaction: It helps computers understand and respond to human language, making them more accessible (e.g., chatbots, voice assistants like Alexa or Siri).
+
+2. Data Insights: Extract meaningful patterns and insights from unstructured text data (e.g., reviews, emails, documents).
+
+3. Automation: Automates tasks like translation, summarization, and sentiment analysis.
+
+
+What is Text Processing?
+Text processing is the foundation of NLP. It involves converting raw text into a structured format that a machine can analyze and process effectively. This includes breaking down the text, cleaning it, and transforming it into a usable format.
+
+
+Basic Steps in Text Processing
+Text Cleaning:
+
+Remove unnecessary characters (punctuation, special symbols, etc.).
+Convert text to lowercase.
+Remove stop words (common words like "the," "is," "and").
+Handle missing data or spelling errors.
+
+Tokenization:
+
+Splitting the text into smaller units like words or sentences.
+Example: "NLP is fun!" → ["NLP", "is", "fun"]
+Stemming and Lemmatization:
+
+Stemming: Reduce words to their root form (e.g., "playing" → "play").
+
+Lemmatization: Similar to stemming but ensures the word is meaningful (e.g., "better" → "good").
+Vectorization:
+
+Convert text into numbers (since machines work with numerical data).
+Example: Using Bag of Words, TF-IDF, or word embeddings like Word2Vec.
+
+
+Examples of NLP in Action
+Text Classification: Categorizing text into predefined labels (e.g., spam detection).
+Sentiment Analysis: Understanding if a text conveys positive, negative, or neutral emotions.
+Machine Translation: Translating one language into another (e.g., Google Translate).
+Chatbots and Virtual Assistants: Answering queries using natural language.
+Summarization: Condensing large amounts of text into key points.
+
+**** Text_Blog *****
+
+The sentiment scores are printed to the console:
+
+Polarity Example:
+Positive: "I love this" → Polarity = 0.5
+Neutral: "It is a table" → Polarity = 0.0
+Negative: "I hate this" → Polarity = -0.8
+Subjectivity Example:
+"The sky is blue" → Subjectivity = 0.1 (objective)
+"I feel happy" → Subjectivity = 0.9 (subjective)
