@@ -1,0 +1,23 @@
+1. Vector Database
+A vector database stores and manages data in the form of high-dimensional vectors. These vectors are numerical representations of unstructured data like text, images, or audio. Instead of traditional keyword-based search, vector databases enable similarity-based search by finding vectors closest to a query vector in the vector space.
+
+Example Use Cases:
+Semantic search: Finding documents similar in meaning, even if the wording is different.
+Recommendation systems: Suggesting similar items based on user preferences.
+Image or video retrieval: Searching by visual similarity.
+
+2. Sentence Transformers
+Sentence Transformers is a library that generates high-quality vector embeddings for sentences or paragraphs. It’s based on transformer models like BERT, fine-tuned for semantic similarity tasks. These embeddings can then be used for tasks such as clustering, ranking, and similarity searches.
+
+Key Features:
+Converts text into fixed-size numerical vectors.
+Pretrained models available for different tasks, such as all-MiniLM-L6-v2, optimized for speed and performance.
+
+3. Pinecone
+Pinecone is a managed vector database service optimized for:
+
+Storing large-scale vector embeddings.
+Fast similarity searches in real-time.
+High availability and scalability.
+With Pinecone, you can create indexes to store embeddings and query them to retrieve the most similar results efficiently.
+
