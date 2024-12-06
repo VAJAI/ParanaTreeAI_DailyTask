@@ -1,0 +1,37 @@
+What is Retrieval-Augmented Generation (RAG)?
+Retrieval-Augmented Generation (RAG) is a framework designed to improve the performance of language models by combining two components: retrieval and generation. This system is particularly effective for answering user questions or performing tasks that require external knowledge not contained in the language model itself.
+
+
+Key Concepts of RAG
+ *****  Why RAG?
+
+Large Language Models (LLMs) like GPT are trained on vast datasets but have a cutoff date and limited capacity to recall specific or up-to-date knowledge.
+RAG bridges this gap by retrieving relevant information from an external knowledge base before generating a response.
+How RAG Works:
+
+Retriever: 
+          Finds relevant context (e.g., documents, passages) from a pre-built knowledge base.
+Generator: 
+         Uses this retrieved information along with the query to generate accurate and context-aware answers.
+
+
+RAG Components in Detail
+1. Retriever
+        Role: Finds the most relevant documents or data from an external knowledge base.
+How It Works:
+            Data is stored as vector embeddings in a vector database (like Pinecone, Weaviate, or FAISS).
+            When a user asks a question, the query is also converted into an embedding, and the system retrieves the closest matches using similarity search.
+Tools Used:
+           Embedding models (e.g., text-embedding-ada-002).
+           Vector databases (e.g., Pinecone, FAISS, Weaviate).
+
+2. Generator
+         Role: Produces human-like text based on the retrieved information and user query.
+How It Works:
+            Takes the retrieved documents as input, along with the original user query.
+            Generates an answer by combining the provided context and the LLM’s reasoning capabilities.
+Tools Used:
+          Large Language Models (e.g., GPT-4, GPT-3.5).
+3. Integrator
+        Role: Combines and presents the retriever's output with the generator's response in a cohesive way.
+Purpose: Ensures the generated response is relevant, factual, and easy to understand.
