@@ -1,0 +1,65 @@
+1. Zero-Shot Prompting
+Definition: The model is given a task without any prior examples or context.
+
+Use Cases:
+
+When you want the model to generalize based on its training.
+Tasks like summarization, translation, or classification.
+Example Prompt:
+"Translate the following sentence to French: 'The weather is nice today.'"
+
+Advantages:
+
+Simple to implement.
+Good for straightforward tasks.
+Disadvantages:
+
+May not perform well on complex or ambiguous tasks without additional context.
+2. Few-Shot Prompting
+Definition: A few examples are provided in the prompt to demonstrate the task.
+
+Use Cases:
+
+When the task requires more context or a specific pattern.
+Useful for tasks like sentiment analysis or creative writing.
+Example Prompt:
+
+rust
+Copy code
+Sentiment Analysis Examples:  
+1. "I love this product!" -> Positive  
+2. "This is the worst service ever." -> Negative  
+3. "I think it's okay." -> Neutral  
+Analyze the sentiment of this sentence: "The food was fantastic!"
+Advantages:
+
+Improves accuracy for nuanced or subjective tasks.
+Helps the model mimic specific output patterns.
+Disadvantages:
+
+Prompts can become lengthy and consume more tokens.
+May still struggle with edge cases.
+3. Chain-of-Thought Prompting
+Definition: Encourages the model to reason step-by-step before providing an answer.
+
+Use Cases:
+
+Logical reasoning, arithmetic problems, or complex Q&A.
+Example Prompt:
+
+
+Question: If a train travels 60 km in 1 hour, how far will it travel in 2.5 hours?  
+Reason step by step:  
+- The train travels 60 km in 1 hour.  
+- In 2 hours, it will travel 60 x 2 = 120 km.  
+- In 0.5 hours, it will travel 60 x 0.5 = 30 km.  
+- Total distance = 120 + 30 = 150 km.  
+Answer: 150 km
+Advantages:
+
+Boosts performance on tasks requiring logical deductions.
+Reduces errors for multi-step problems.
+Disadvantages:
+
+Longer response time due to detailed reasoning.
+Not ideal for tasks requiring brief answers.
